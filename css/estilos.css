@@ -45,17 +45,6 @@ body {
     text-shadow: 0px 1px 0px #c70067;
 }
 
-.INICIO:hover {
-    background: linear-gradient(to bottom, #ef027d 5%, #ff5bb0 100%);
-    background-color: #ef027d;
-}
-
-.INICIO:active {
-    position: relative;
-    top: 1px;
-    display: flex;
-}
-
 #titulo-principal {
     font-size: 35px;
     text-align: center;
@@ -140,7 +129,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    
+
     width: 98%;
     justify-content: space-between;
     height: 120px;
@@ -156,8 +145,22 @@ body {
 
 .redes {
 
-margin-left: 5%;
-margin-top: 10%;
+    margin-left: 5%;
+    margin-top: 10%;
 
 
 }
+
+@media(max-width:1023px) {
+    .header{
+        flex-direction:column;
+        align-items: center;
+        gap:20px;
+    }
+    
+   
+
+
+}
+
+@media(max-width:600px) {}

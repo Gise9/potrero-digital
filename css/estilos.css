@@ -71,8 +71,8 @@ body {
     text-align: justify;
     width: 90%;
     height: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin-top: 8%;
+    margin-bottom: 8%;
     margin-right: 5%;
     margin-left: 5%;
 
@@ -118,9 +118,9 @@ body {
 .piepagina {
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     text-align: justify;
-    margin-top: 3%;
+    margin-top: 15%;
     margin-bottom: 3%;
     margin-right: 5%;
     margin-left: 5%;
@@ -129,14 +129,14 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    width: 98%;
+    width: 100%;
     justify-content: space-between;
-    height: 120px;
-    top: o;
+    height: auto;
     left: 15%;
     right: 15%;
     align-items: center;
     margin-bottom: 5%;
+    flex-wrap: wrap;
 
 
 
@@ -149,4 +149,42 @@ body {
 
 
 }
+.logo{
+    width: 120px;
+    height: auto;
+    border-radius: 50%;
 
+}
+
+@media(max-width:1023px) {
+    .header{
+
+       
+    }
+    .INICIO{
+        width: auto;
+        height: auto ;
+        font-size: 10px;
+    }
+    .logo{
+        width: 45px;
+        height: 45px;
+    }
+    .destinos1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .destinos{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:600px){
+    
+    .header{
+        
+    }
+
+}
